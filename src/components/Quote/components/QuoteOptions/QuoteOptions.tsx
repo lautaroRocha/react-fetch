@@ -9,7 +9,6 @@ const QuoteOptions = ({params, fetch, change} : {params: PARAMS, fetch:()=>void,
                         type="radio" name="author" value='author' 
                         onChange={()=>change({random: false, author : ''})}/>
                     <input type="radio" name="author" value='random' 
-                        defaultChecked={params.random}
                         onChange={()=>change({random: true, author: ''})}
                     />
                 </label>
