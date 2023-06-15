@@ -7,7 +7,8 @@ const QuoteOptions = ({params, fetch, change} : {params: PARAMS, fetch:()=>void,
                 <label htmlFor="author">
                     <input 
                         type="radio" name="author" value='author' 
-                        onChange={()=>change({random: false, author : ''})}/>
+                        onChange={()=>change({random: false, author : ''})}
+                        checked={params.random}/>
                     <input type="radio" name="author" value='random' 
                         onChange={()=>change({random: true, author: ''})}
                     />
